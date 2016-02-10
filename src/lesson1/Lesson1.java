@@ -109,8 +109,7 @@ public class Lesson1 {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
     /* YOUR CODE HERE */
-        Thread thread = new Thread(() -> list.forEach(System.out::println));
-        thread.run();
+        new Thread(() -> list.forEach(System.out::println)).start();
     }
 
     /**
